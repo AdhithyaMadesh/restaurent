@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurent website template with HTML and CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom css file link-->
+    {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'restaurentapp/index.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'restaurentapp/hotel.css'%}">
+        <script src="{% static 'restaurentapp/myfirst.js' %}"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    {% comment %} calender {% endcomment %}
+    <link rel="stylesheet" href="{% static '' %}">
+    <script src="{% static 'path_to_fullcalendar_js' %}"></script>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="#" class="logo"><img src="\static\restaurentapp\logo.png" alt="logo image"></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menus">menu</a>
+            <a href="#team">team</a>
+            <a href="#reservation">Reservation</a>
+            <a href="http://127.0.0.1:8000/admin">Admin</a>
+            <a href="#blog">blog</a>
+            <a href="hotel.html">Hotel tour</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- slider section start -->
+    <div class="home" id="home">
+        <div class="home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="\static\restaurentapp\crown-symbol.png"alt="crown image">
+                        <h3>Delicious Royate</h3>
+                        <h1>Gift Voucher</h1>
+                        <p>
+                            Give away your  beloved Customers
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="\static\restaurentapp\crown-symbol.png" alt="crown image">
+                        <h3>Sale of 10% this dish</h3>
+                        <h1>the fresh</h1>
+                        <p>
+                            food Restaurent
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <img src="\static\restaurentapp\crown-symbol.png" alt="crown image">
+                        <h3>we are open</h3>
+                        <h1>fresh fruits</h1>
+                        <p>
+                            you will love it !!! 
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- slider section ends -->
+    <!-- welcome section start  -->
+    <section class="welcome" id="about">
+        <h1 class="heading">WELCOME TO ROYATE</h1>
+        <center><h3 class="sub-heading"> ~ Luxury and Quality ~ </h3></center>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="\static\restaurentapp\post-thumb-1.jpg" alt="image">
+                </div>
+                <div class="content">
+                    <h3>PROFESSIONAL LEVEL</h3>
+                    <P>
+                        nor again is there anyone who loves or pursues or desires to obtain pain of itself ,because it is pain ,but because ocassionally circumstances occur. 
+                    </P>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="\static\restaurentapp\post-thumb-2.jpg" alt="image">
+                </div>
+                <div class="content">
+                    <h3>FRESH FOOD GUARANTEED</h3>
+                    <P>
+                        nor again is there anyone who loves or pursues or desires to obtain pain of itself ,because it is pain ,but because ocassionally circumstances occur. 
+                    </P>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="\static\restaurentapp\post-thumb-3.jpg" alt="image">
+                </div>
+                <div class="content">
+                    <h3>THE MENU IS PLENTIFUL</h3>
+                    <P>
+                        nor again is there anyone who loves or pursues or desires to obtain pain of itself ,because it is pain ,but because ocassionally circumstances occur. 
+                    </P>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- welcome section ends -->
+
+    <!-- our menu section start -->
+
+    <section class="our-menu" id="menus"style="background-image:'images/our-menu-bg-1.png'">
+        <h1 class="heading">Royate's food menu</h1>
+        <center><h3 class="sub-heading"> ~ see what we offer ~ </h3></center>
+        <div class="menu-container">
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Main Course</h2>
+                    <img src="\static\restaurentapp\drinks.png" alt="drinks image">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+                        <ul>
+                            <li><a href="#">~ Chicken Briyani</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+                        <ul>
+                            <li><a href="#">~ Mushrooms</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Soups & Salads</h2>
+                    <img src="\static\restaurentapp\drinks.png" alt="drinks image">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+                        <ul>
+                            <li><a href="#">~ Chicken Briyani</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+                        <ul>
+                            <li><a href="#">~ Mushrooms</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Drinks</h2>
+                    <img src="\static\restaurentapp\drinks.png" alt="drinks image">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+                        <ul>
+                            <li><a href="#">~ Chicken Briyani</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+                        <ul>
+                            <li><a href="#">~ Mushrooms</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Desserts</h2>
+                    <img src="\static\restaurentapp\drinks.png" alt="drinks image">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$40</h3>
+                        <ul>
+                            <li><a href="#">~ Chicken Briyani</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item-menu">
+                        <h3>Super-Delicious Zuppa Toscana</h3>
+                        <span class="dots"></span>
+                        <h3>$26</h3>
+                        <ul>
+                            <li><a href="#">~ Mushrooms</a></li>
+                            <li><a href="#">~ Spicy Gravy</a></li>
+                            <li><a href="#">~ Spinach</a></li>
+                            <li><a href="#">~ Sausage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- our menu section ends -->
+    <!-- our team section starts -->
+
+    <section class="our-team" id="team">
+        <h1 class="heading">our talented chef</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Experience & Enthusiasm ~ </h3>
+        </center>
+        <div class="our-chef">
+            <div class="item">
+                <div class="image">
+                    <img src="\static\restaurentapp\our-chef-1.jpg" alt="">
+                </div>
+                <div class="chef-info">
+                    <div>
+                        <h3>Jerry Robertson</h3>
+                        <span>Master chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="\static\restaurentapp\our-chef-2.jpg" alt="">
+                </div>
+                <div class="chef-info">
+                    <div>
+                        <h3>Corol Rowsan</h3>
+                        <span>Master chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="\static\restaurentapp\our-chef-3.jpg" alt="">
+                </div>
+                <div class="chef-info">
+                    <div>
+                        <h3>Tayler Maccoy</h3>
+                        <span>Master chef</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our team section ends -->
+
+    <!-- reservation section start -->
+        <div class="reservation" id="reservation">
+            <div class="img">
+                <img src="\static\restaurentapp\book-a-table.jpg" alt="table booking image">
+            </div> 
+            <div class="form">
+                <h1 class="heading">book a table</h1>
+                <center><h3 class="sub-heading"> ~ check out our place ~ </h3></center>
+            
+                <form action="submit" method="POST" id="event-form">
+                    {% csrf_token %}
+                    <div class="form-holder">
+                        <div>
+                            <input type="text" name="txtname" id="txtname" required="" placeholder="Name">
+                            <select name="txtpeople" id="txtpeople" required="">
+                                <option>1 people</option>
+                                <option>2 people</option>
+                                <option>3 people</option>
+                                <option>4 people</option>
+                            </select>
+                            <input type="text" name="txtphone" id="txtphone" required="" placeholder="Phone">
+                        </div>
+                        
+                        <div>
+                            <input type="time" name="txttime" id="txttime" required="" placeholder="Time">
+                            <input type="date"name="txtdate" id="txtdate" required="" placeholder="Date">
+                            <input type="email"name="txtemail" id="txtemail" required="" placeholder="email">
+                        </div>
+                    </div>
+                    <p>
+                        {% comment %} <input type="Submit" name="Submit" id="Submit" value="Book now" onclick="click"> {% endcomment %}
+                        <button name="submit" id="submit" onclick="window.alert('Confirm Submission')">Book now</button>
+                    </p>
+
+                </form>
+                
+            </div>
+        </div>
+
+    <!-- reservation section ends -->
+
+        <!-- news section starts -->
+
+        <section class="blog welcome" id="blog">
+            <h1 class="heading">latest news</h1>
+            <center><h3 class="sub-heading">~ Great articles ~</h3></center>
+            <div class="box-container">
+                <div class="box">
+                    <div class="img">
+                        <img src="\static\restaurentapp\post-thumb-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>PROFESSIONAL LEVEL</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eius saepe debitis blanditiis earum ipsum quae vel itaque, quas quam magnam est praesentium laudantium? Aspernatur nostrum magnam quia iure placeat.
+                        </P>
+
+                        <a href="#">READ MORE</a>
+                        <img src="\static\restaurentapp\post-body-bg-1.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="\static\restaurentapp\post-thumb-5.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>FRESH FOOD GUARANTEED</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eius saepe debitis blanditiis earum ipsum quae vel itaque, quas quam magnam est praesentium laudantium? Aspernatur nostrum magnam quia iure placeat.
+                        </P>
+                        <a href="#">READ MORE</a>
+                        <img src="\static\restaurentapp\post-body-bg-2.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img">
+                        <img src="\static\restaurentapp\post-thumb-6.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>THE MENU IS PLENTIFUL</h3>
+                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente eius saepe debitis blanditiis earum ipsum quae vel itaque, quas quam magnam est praesentium laudantium? Aspernatur nostrum magnam quia iure placeat.
+                        </P>
+                        <a href="#">READ MORE</a>
+                        <img src="\static\restaurentapp\post-body-bg-3.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news section ends -->
+
+
+        <!-- footer section starts -->
+
+        <section class="footer">
+            <img src="\static\restaurentapp\logo.png"class="logo" alt="logo image">
+            <div class="container">
+                <div>
+                    <h3>ABOUT US </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, modi reprehenderit nam nostrum, animi facere aspernatur similique ipsam omnis dolore minima doloremque excepturi vitae nulla eligendi incidunt adipisci! Impedit, animi.</p>
+                </div>
+                <div>
+                    <h3>GET NEWS & OFFERS</h3>
+                    <input type="email" name="" placeholder="enter your email">
+                    <ul>
+                        <li><a href="https://twitter.com/AdhithyaMadesh?t=mgQjpjtM5hyAk5wBjdBYyA&s=08"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/adhiadhi50?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/918939338927"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/adhithya-adhi-08563b225"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>CONTACT US</h3>
+                    <span>AK Creative Networks </span>
+                    <span>+ (91) 8939307411</span>
+                    <span>madeshauto64@gmail.com</span>
+                    <span>www.royaterestaurent.com</span>
+                </div>
+            </div>
+
+            <p>&copy;2023 Reserved by AK creative networks</p>
+        </section>
+        <!-- footer section ends -->
+
+        <!-- jump to top -->
+
+        <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+    
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true,
+      });
+    </script>
+    
+    <script type="text/script">
+      let menu =document.querySelector('#menu');
+      let navbar =document.querySelector('.navbar');
+    
+      menu.onclick=()=>{
+          menu.classList.toggle('fa-times');
+          navbar.classList.toggle('active');
+      }
+    </script>
+      
+    
+    
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img {
+    width:100%;
+    height:100%;
+    /* align-items:center; */
+    /* padding: 0.10vh; */
+}
+
+.swiper .swiper-button-prev {
+    color: aliceblue;
+}
+.swiper .swiper-button-next {
+    color: #efe8e8;
+}
+
+.swiper.swiper-pagination {
+    background:#fff;
+}

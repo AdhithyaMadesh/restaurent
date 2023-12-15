@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Tour</title>
+    <link rel="stylesheet" href="hotelpics.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel1.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel2.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel3.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel5.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel6.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel7.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel8.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel9.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel10.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel11.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel12.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+            <div class="swiper-slide"><img src="/static/restaurentapp/hotel13.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+             <div class="swiper-slide"><img src="/static/restaurentapp/hotel14.jpg" alt="image of an hotel !!" height="600" width="1500"></div>
+           </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:7000,
+                disableOnInteraction:false,
+            },
+            loop: true,  
+            pagination: {
+              el: '.swiper-pagination',
+              clickable :true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+          });
+
+    </script>
+</body>
+</html>
+
+
